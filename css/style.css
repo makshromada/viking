@@ -1,8 +1,8 @@
-.body{
-    display: flex;
+body{
     font-family: "Gabriela"; 
-    font-size: 18px;
+    font-size: 28px;
     color: black;
+    margin: 0;
 }
 
     /* МЕНЮ */
@@ -10,54 +10,53 @@
  .menu{
     display: flex;
     flex-direction: row-reverse;
-    flex-grow: 1;
-        width: auto;
-        height: 60px;
+    width: auto;
+    height: 60px;
     background: #0f7417;
     padding: 10px;
+    color: wheat;
+    text-decoration: none;
+
 }
     .menu_items{
         display: flex;
         align-self: center;
-            width: auto;
-            height: auto;
+        width: auto;
+        height: auto;
         padding: 25px;
         margin-left: 10px;
         font-size: 18px ;
         text-align: center;
         color: #fff; /* цвет текста */
-            background: #0f7417;
-            text-decoration: none; /* убирать подчёркивание у ссылок */
-            user-select: none; /* убирать выделение текста */
-            padding: .7em 1.5em; /* отступ от текста */
-            outline: none; /* убирать контур в Mozilla */
-            border: 0;    
+        background: #0f7417;
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        padding: .7em 1.5em; /* отступ от текста */
+        outline: none; /* убирать контур в Mozilla */
+        border: 0;
            
     }
     .menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
     .menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
 
+    a{
+        text-decoration: none;
+        color: white;
+    }
         /* ЛОГОТИП */
 
         .logotip{
             display: flex;
             background-image: url("../images/logotip.jpg");
-            flex-direction: row;
-            flex-grow: 1;
             height: 300px;
-            width: auto;
             background-size: cover;
+            justify-content: flex-end;
         }
         .text_logotip{
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: auto;          
             text-align: center;
             font-size: 35px;
-            font-family: "Gabriela";
             margin-top: 40px;
-            margin-left: 60%; 
+            margin-right: 40px;
         }
         .hr_logotip{
             display: flex;
@@ -73,8 +72,8 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-        padding: 0 100px 100px;
-        margin: none;
+    padding: 0 100px 100px;   /* ширина контейнера */
+    margin: none;
     width: auto;
     height: auto;
 }
@@ -82,12 +81,6 @@
     /* ИНФОРМАЦИЯ О НАС */
 
         .O_NAS{
-            flex-direction: column;
-            display: flex;
-            flex-grow: 1;
-            height: auto;
-            width: auto;
-            justify-content: center;
             text-align:  center;  
             background: rgb(255, 255, 255);
         }  
@@ -105,14 +98,9 @@
         }      
 
         .tattoo_from_VIKING_img{
-            display: flex;
-            flex-grow: 1;
-            justify-content: center;
             padding: 25px;
         }
             .round{
-                display: flex;
-                flex-grow: 0;
                 width: 380px;
                 height: 380px;
                 border-radius: 200px;
@@ -120,15 +108,9 @@
             }
 
         .tattoo_from_VIKING_text{
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            padding: 25px;
-            background:  white;    
-            margin-top: 100px;            
+            padding: 25px;           
             text-align: center;
             font-size: 25px;
-            font-family: "Gabriela"; 
         }
 
     /* VK */
@@ -140,7 +122,6 @@
         background-color: #3b3b3b4b;
         background-image: url(../images/fon.jpg);
         background-size: cover;
-        background-size: 100%;
         width: auto;
         height: auto;
     }
@@ -151,16 +132,17 @@
         width: auto;
         height: 600px;
         flex-grow: 1;
+        justify-content: space-between;
     }
     .VK_http{
         display: flex;
         flex-direction: column;
         justify-content: center;
         background: rgba(2, 77, 10, 0.562);
-            width: auto;
-            height: 50px;
-            padding: 20px;
-            margin-top: 100px;
+        width: auto;
+        height: 50px;
+        padding: 20px;
+        margin-bottom: 200px;
         text-align: center;
         color: black;
         align-self: center;
@@ -170,12 +152,11 @@
         text-decoration: none;  
     }
         .VK_p{
-            font-family: "Gabriela"; 
-            margin-top: 70px;
             text-align: center;
             font-size: 50px;
             color: white; 
-            text-decoration: none;    
+            text-decoration: none;  
+            padding: 25px;  
         }
 
         /* НАШИ МАСТЕРА */
@@ -188,15 +169,12 @@
     color: rgb(0, 0, 0);
     text-align: center;
     background: #F0F0F0;
-    font-family: "Gabriela"; 
 }
 
 .masters{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    width: auto;
-    height: auto;
     justify-content: center;
     background: #F0F0F0;
 }
@@ -204,35 +182,40 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 50px;
+        align-self: center;
         flex-grow: 1;
     }
         .macters_foto{
             display: flex;
             flex-grow: 1;
             justify-content: center;
-            padding: 25px;
+            height: 350px;
+            width: 350px;
+            align-self: center;
         }
            .round_masters{
                 display: flex;
-                flex-grow: 0;
-                width: 380px;
-                height: 380px;
+                flex-grow: 1;
+                width: 100%;
+                height: 100%;
                 border-radius: 200px;
                 border: 10px solid #024D0A;
+                box-sizing: border-box;
             }
             .masters_text2{
                 font-size: 25px; 
                 color: rgb(0, 0, 0);
                 text-align: center;
-                font-family: "Gabriela"; 
+                white-space: nowrap; 
+                padding-bottom: 50px;
             }
             .hr_masters{
                 display: flex;
                 flex-grow: 0;
-                width: 100%;
+                width: auto;
                 height: 5px;
                 background: #024D0A;
+                margin: 30px;
             }
 
     /* КОНТАКТНАЯ ИНФОРМАЦИЯ */
@@ -245,9 +228,10 @@
     width: auto;
     height: auto;
     text-align: center;
-    text-align: center;
     font-size: 25px;
     color: white;
+    padding-top: 100px;
+    padding-bottom: 130px;
 }
     .contakts2{
         display: flex;
@@ -271,7 +255,7 @@
             color: white;
         }
 
-    /* СООБЩЕНИЕ НАМ */
+    /* СООБЩЕНИЕ НАМ */        /*!!!!!!*/
 
 .podpiska{
     display: flex;
@@ -286,17 +270,18 @@
 
     .E-mail{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 100px;
         width: auto;
+        margin-bottom: 13px;
     }
         .sms{
             display: flex;
             height: 40px;
             width: 500px;
             flex-grow: 1;
-
-
+            margin: 1px;
+            margin-left: 0px;
     }
     .button_send{
         display: flex;
@@ -334,7 +319,7 @@
             width: auto;
             height: auto;
             font-size: 25px;
-                padding: 50px;
+            padding: 50px;
         }
         .social_network{
             display: flex;
@@ -348,8 +333,9 @@
             .social{
                 display: flex;
                 flex-grow: 1;
-                background: rgba(35, 35, 212, 0.411);
-                border: solid 1px red;
+                background: rgba(56, 56, 56, 0.411);
+                border: solid 1px rgb(0, 0, 0);
+                border-radius: 10px;
                 padding: 10px;
                 margin: 5px;
                 height: auto;
@@ -362,22 +348,12 @@
             height: auto;
         }
 
+.hr{
+    display: flex;
+    flex-grow: 0;
+    width: 100%;
+    height: 5px;
+    background: #0f7417;
+    border: #000;
+}
 
-
-.text{  
-    font-family: "Gabriela"; 
-    font-size: 30px; /* Размер шрифта в пунктах */
-    color: rgb(0, 0, 0);
-} 
-
-
-
-
-                                                                    .hr{
-                                                                        display: flex;
-                                                                        flex-grow: 0;
-                                                                        width: 100%;
-                                                                        height: 5px;
-                                                                        background: #0f7417;
-                                                                        border: #000;
-                                                                    }

@@ -1,0 +1,67 @@
+body{
+    font-family: "Gabriela"; 
+    font-size: 28px;
+    color: black;
+    margin: 0;
+}
+
+    /* МЕНЮ */
+
+ .menu{
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    height: 60px;
+    background: #0f7417;
+    padding: 10px;
+    color: wheat;
+    text-decoration: none;
+
+}
+    .menu_items{
+        display: flex;
+        align-self: center;
+        width: auto;
+        height: auto;
+        padding: 25px;
+        margin-left: 10px;
+        font-size: 18px ;
+        text-align: center;
+        color: #fff; /* цвет текста */
+        background: #0f7417;
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        padding: .7em 1.5em; /* отступ от текста */
+        outline: none; /* убирать контур в Mozilla */
+        border: 0;
+           
+    }
+    .menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
+    .menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+    /* ГАЛЕРЕЯ */
+
+
+    .library .item{
+        display: inline-block;
+    }
+    .library a{
+        display: inline-block;
+        width: 300px;
+    }
+    .library img {
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+    }
