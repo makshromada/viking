@@ -47,8 +47,64 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.novigatian{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    margin-right: 100px;    
+    margin-left: 100px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border: solid 2px green;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.novigatian_items{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
     padding: 10px;
 }
+
+
+
+
+.tattoo_from_VIKING_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+    .round{
+        display: flex;
+        align-self: center;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 10px solid #6E6262;
+    }
+
+.tattoo_from_VIKING_text{
+    padding: 25px;           
+    text-align: center;
+    font-size: 25px;
+}
+
+.hr{
+    border: solid 3px green;
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 5px;
+
+}   
+
 
     /* ГАЛЕРЕЯ */
 
