@@ -1,359 +1,388 @@
 body{
     font-family: "Gabriela"; 
     font-size: 28px;
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 0;
+    text-align: end;
 }
 
-    /* МЕНЮ */
+/* МЕНЮ */
 
- .menu{
+.menu{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: auto;
     height: 60px;
     background: #0f7417;
     padding: 10px;
     color: wheat;
     text-decoration: none;
-
+    justify-content: flex-end;
 }
-    .menu_items{
-        display: flex;
-        align-self: center;
-        width: auto;
-        height: auto;
-        padding: 25px;
-        margin-left: 10px;
-        font-size: 18px ;
-        text-align: center;
-        color: #fff; /* цвет текста */
-        background: #0f7417;
-        text-decoration: none; /* убирать подчёркивание у ссылок */
-        user-select: none; /* убирать выделение текста */
-        padding: .7em 1.5em; /* отступ от текста */
-        outline: none; /* убирать контур в Mozilla */
-        border: 0;
-           
-    }
-    .menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
-    .menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+.menu_logotip{
+    background-image: url("../images/viking.jpg");
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    align-self: flex-start;
+}
 
-    a{
-        text-decoration: none;
-        color: white;
-    }
-        /* ЛОГОТИП */
-
-        .logotip{
-            display: flex;
-            background-image: url("../images/logotip.jpg");
-            height: 300px;
-            background-size: cover;
-            justify-content: flex-end;
-        }
-        .text_logotip{
-            text-align: center;
-            font-size: 35px;
-            margin-top: 40px;
-            margin-right: 40px;
-        }
-        .hr_logotip{
-            display: flex;
-            width: auto;
-            width: 420px;
-            height: 3px;
-            background: #000000;
-        }
-
-    /* ГЛАВНЫЙ КОНТЕЙНЕР */
-
-.container{
+.menu_items{
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 0 100px 100px;   /* ширина контейнера */
-    margin: none;
     width: auto;
     height: auto;
+    padding: 25px;
+    margin-left: 10px;
+    font-size: 18px ;
+    text-align: center;
+    color: #fff; /* цвет текста */
+    background: #0f7417;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 0;
+    cursor: pointer;
+}
+.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
+.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+    
+a{
+    display: flex;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+.prisse{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    margin: 2px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-    /* ИНФОРМАЦИЯ О НАС */
-
-        .O_NAS{
-            text-align:  center;  
-            background: rgb(255, 255, 255);
-        }  
-
-    /* НАШИ РАБОТЫ */
-
-        .tattoo_from_VIKING{
-            display: flex;
-            flex-direction: row;
-            flex-grow: 1;
-            background: white;
-            width: auto;
-            margin-top: 100px; 
-            margin-bottom: 100px; 
-        }      
-
-        .tattoo_from_VIKING_img{
-            padding: 25px;
-        }
-            .round{
-                width: 380px;
-                height: 380px;
-                border-radius: 200px;
-                border: 10px solid #6E6262;
-            }
-
-        .tattoo_from_VIKING_text{
-            padding: 25px;           
-            text-align: center;
-            font-size: 25px;
-        }
-
-    /* VK */
-
-    .VK{
-        display: flex;
-        flex-grow: 1;
-        flex-direction: column;
-        background-color: #3b3b3b4b;
-        background-image: url(../images/fon.jpg);
-        background-size: cover;
-        width: auto;
-        height: auto;
-    }
-    .VK_filtr{
-        display: flex;
-        flex-direction: column;
-        background: rgba(87, 87, 87, 0.644);
-        width: auto;
-        height: 600px;
-        flex-grow: 1;
-        justify-content: space-between;
-    }
-    .VK_http{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: rgba(2, 77, 10, 0.562);
-        width: auto;
-        height: 50px;
-        padding: 20px;
-        margin-bottom: 200px;
-        text-align: center;
-        color: black;
-        align-self: center;
-        text-decoration: none;
-    }
-    .a_VK_p{
-        text-decoration: none;  
-    }
-        .VK_p{
-            text-align: center;
-            font-size: 50px;
-            color: white; 
-            text-decoration: none;  
-            padding: 25px;  
-        }
-
-        /* НАШИ МАСТЕРА */
-
-.masters_text{
+.akvarel{
     display: flex;
     flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/akvarel.jpg");
+    background-size: cover;
     flex-grow: 1;
-    font-size: 35px; 
-    color: rgb(0, 0, 0);
-    text-align: center;
-    background: #F0F0F0;
+    margin: 5px;
+    border: solid 4px green;
+}
+.biomehanka{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/biomehanka.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;    
+}
+.bioorganika{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/bioorganika.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.black-vork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/black-vork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.black-write{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/black-write.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.chikano{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/chikano.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.dotvork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/dotvork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.etnika{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/etnika.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.grafika{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/grafika.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.gravure{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/chikano.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.hedpouk{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/hedpouk.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.jpane{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/jpane.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.lainevork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/lainevork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.minimalizm{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/minimalizm.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
 }
 
-.masters{
+.neo-tradishn{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/neo-tradishn.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.nev-skul{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/nev-skul.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.old_skul{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/old_skul.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.oriental{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/oriental.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.ornamental{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/ornamental.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.polinesiya{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/polinesiya.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.real{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/real.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.skech-style{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/skech-style.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.tradishnl{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/tradishnl.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.tresh-polka{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/tresh-polka.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.trible{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/trible.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.text{
+    display: flex;
+    height: 20%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.486);
+}
+
+/* НИЖНЯЯ ПОНЕЛЬ */ 
+    
+.footar{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    justify-content: center;
-    background: #F0F0F0;
+    width: auto;
+    height: 200px;
+    background: rgb(54, 54, 54);
 }
-    .master_1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-        flex-grow: 1;
-    }
-        .macters_foto{
-            display: flex;
-            flex-grow: 1;
-            justify-content: center;
-            height: 350px;
-            width: 350px;
-            align-self: center;
-        }
-           .round_masters{
-                display: flex;
-                flex-grow: 1;
-                width: 100%;
-                height: 100%;
-                border-radius: 200px;
-                border: 10px solid #024D0A;
-                box-sizing: border-box;
-            }
-            .masters_text2{
-                font-size: 25px; 
-                color: rgb(0, 0, 0);
-                text-align: center;
-                white-space: nowrap; 
-                padding-bottom: 50px;
-            }
-            .hr_masters{
-                display: flex;
-                flex-grow: 0;
-                width: auto;
-                height: 5px;
-                background: #024D0A;
-                margin: 30px;
-            }
-
-    /* КОНТАКТНАЯ ИНФОРМАЦИЯ */
-
-.contakts{
+.address_number{
     display: flex;
-    flex-direction: column;
     flex-grow: 1;
-    background: #6E6262;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
-    text-align: center;
     font-size: 25px;
+    padding: 50px;
     color: white;
-    padding-top: 100px;
-    padding-bottom: 130px;
 }
-    .contakts2{
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        background: #6E6262;
-        width: auto;
-        height: auto;
-        justify-content: center;
-    }
-        .contakt3{ 
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            background: #6E6262;
-            width: auto;
-            height: auto;
-            justify-content: center;
-            text-align: center;
-            font-size: 20px;
-            color: white;
-        }
-
-    /* СООБЩЕНИЕ НАМ */        /*!!!!!!*/
-
-.podpiska{
+.text{
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    background-image: url(../images/fon.jpg);
-    background-size: 100%;
-    background-size: cover;
-    height: 600px;
-    width: auto;
-} 
-
-    .E-mail{
-        display: flex;
-        flex-direction: column;
-        height: 100px;
-        width: auto;
-        margin-bottom: 13px;
-    }
-        .sms{
-            display: flex;
-            height: 40px;
-            width: 500px;
-            flex-grow: 1;
-            margin: 1px;
-            margin-left: 0px;
-    }
-    .button_send{
-        display: flex;
-        flex-direction: row;
-        height: 50px;
-        width: auto;
-    }
-        .send{
-            display: flex;
-            flex-direction: row;
-            height: 40px;
-            width: 150px;
-    }
-
-    /* НИЖНЯЯ ПОНЕЛЬ */ 
-    
-    .br-footar{
-        width: auto;
-        height: 50px;
-        background: #424242;        
-    }
-
-    .footar{
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        width: auto;
-        height: 200px;
-        background: rgb(54, 54, 54);
-    }
-        .address_number{
-            display: flex;
-            flex-grow: 1;
-            align-items: center;
-            width: auto;
-            height: auto;
-            font-size: 25px;
-            padding: 50px;
-        }
-        .social_network{
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            align-items: center;
-            width: 300px;
-            height: auto;
-            background: #2B2B2B;
-        }
-            .social{
-                display: flex;
-                flex-grow: 1;
-                background: rgba(56, 56, 56, 0.411);
-                border: solid 1px rgb(0, 0, 0);
-                border-radius: 10px;
-                padding: 10px;
-                margin: 5px;
-                height: auto;
-                width: 280px;
-            }
-        .social_network1{
-            display: flex;
-            flex-grow: 1;
-            width: 100px;
-            height: auto;
-        }
-
-.hr{
-    display: flex;
-    flex-grow: 0;
-    width: 100%;
-    height: 5px;
-    background: #0f7417;
-    border: #000;
+    height: 20%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.486);
 }
-

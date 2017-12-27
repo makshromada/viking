@@ -1,49 +1,56 @@
 body{
     font-family: "Gabriela"; 
     font-size: 28px;
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 0;
 }
 
-    /* МЕНЮ */
+/* МЕНЮ */
 
- .menu{
+.menu{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: auto;
     height: 60px;
     background: #0f7417;
     padding: 10px;
     color: wheat;
     text-decoration: none;
-
+    justify-content: flex-end;
 }
-    .menu_items{
-        display: flex;
-        align-self: center;
-        width: auto;
-        height: auto;
-        padding: 25px;
-        margin-left: 10px;
-        font-size: 18px ;
-        text-align: center;
-        color: #fff; /* цвет текста */
-        background: #0f7417;
-        text-decoration: none; /* убирать подчёркивание у ссылок */
-        user-select: none; /* убирать выделение текста */
-        padding: .7em 1.5em; /* отступ от текста */
-        outline: none; /* убирать контур в Mozilla */
-        border: 0;
-           
-    }
-    .menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
-    .menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+.menu_logotip{
+    background-image: url("../images/viking.jpg");
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    align-self: flex-start;
+}
+.menu_items{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    margin-left: 10px;
+    font-size: 18px ;
+    text-align: center;
+    color: #fff; /* цвет текста */
+    background: #0f7417;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 0;
+    cursor: pointer;
+}
+.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
+.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
 
-    a{
-        text-decoration: none;
-        color: white;
-    }
-
+a{
+    display: flex;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -51,48 +58,60 @@ body{
     margin-bottom: 50px;
 }
 
+/* НАВИГАЦИЯ */
+
 .novigatian{
     display: flex;
     flex-direction: row;
     height: auto;
     width: auto;
-    margin-right: 100px;    
-    margin-left: 100px;
     padding: 20px;
-    background: rgb(255, 255, 255);
-    border: solid 2px green;
+    background: rgb(161, 161, 161);
     border-radius: 15px;
     margin-top: 50px;
-}
 
+}
 .novigatian_items{
     display: flex;
     flex-direction: column;
     height: auto;
     width: auto;
-    padding: 10px;
+    padding: 50px;
+    
 }
-
-
-
+.tattoo_from_VIKING_img1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    background-image: url(../images/070HiAP7HmY.jpg);
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border: 10px solid green;
+    background-size: cover;
+}
+.tattoo_from_VIKING_img1:hover { border-color: #000000d5;} /* при наведении курсора мышки */
+.tattoo_from_VIKING_img1:active { border-color: #6d0606d5;} /* при нажатии */
 
 .tattoo_from_VIKING_img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    align-self: center;
+    background-image: url(../images/070HiAP7HmY.jpg);
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border: 10px solid rgb(99, 99, 99);
+    background-size: cover;
+    
 }
-    .round{
-        display: flex;
-        align-self: center;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        border: 10px solid #6E6262;
-    }
+.tattoo_from_VIKING_img:hover { border-color: #000000d5;} /* при наведении курсора мышки */
+.tattoo_from_VIKING_img:active { border-color: #6d0606d5;} /* при нажатии */
 
 .tattoo_from_VIKING_text{
-    padding: 25px;           
+    padding: 5px;           
     text-align: center;
     font-size: 25px;
 }
@@ -102,22 +121,29 @@ body{
     width: 90%;
     margin-top: 50px;
     border-radius: 5px;
-
 }   
 
+/* ГАЛЕРЕЯ */
 
-    /* ГАЛЕРЕЯ */
-
-
-    .library .item{
-        display: inline-block;
-    }
-    .library a{
-        display: inline-block;
-        width: 300px;
-    }
-    .library img {
-        display: inline-block;
-        width: 300px;
-        height: 400px;
+.library { 
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.library a {
+    flex-grow: 1;
+    margin: 5px;
+    overflow: hidden;
+}
+.library img {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;           
+    flex-grow: 1;
+}
+a{  
+    display: flex;
+    flex-grow: 1;
     }

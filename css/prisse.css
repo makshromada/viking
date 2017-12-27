@@ -1,0 +1,183 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Gabriela"; 
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+/* МЕНЮ */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 60px;
+    background: #0f7417;
+    padding: 10px;
+    color: wheat;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+.menu_logotip{
+    background-image: url("../images/viking.jpg");
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    align-self: flex-start;
+}
+.menu_items{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    margin-left: 10px;
+    font-size: 18px ;
+    text-align: center;
+    color: #fff; /* цвет текста */
+    background: #0f7417;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 0;
+    cursor: pointer;
+}
+.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
+.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+    
+.zapiss{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    margin-top: 100px;
+    margin-left: 10px;
+    font-size: 18px ;
+    text-align: center;
+    color: #fff; /* цвет текста */
+    background: #bb680893;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 0;
+    cursor: pointer;
+    position: fixed;
+    align-self: flex-end;
+}
+a{
+    display: flex;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto; 
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+
+}
+hr{
+    width: 100%;
+    border: solid 3px green;
+    border-radius: 2px;
+}
+.style{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.black-write{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    background-image: url("../images/prisse/black-write.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+    border-radius: 5%;
+}
+.chikano{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    background-image: url("../images/prisse/chikano.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+    border-radius: 5%;
+}
+.dotvork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px;
+    background-image: url("../images/prisse/dotvork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+    border-radius: 5%;
+}
+.items_style{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    margin-left: 10px;
+    font-size: 18px ;
+    text-align: center;
+    color: #fff; /* цвет текста */
+    background: green;
+    border-radius: 10px;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    cursor: pointer;
+    justify-content: center;
+}
+
+/* НИЖНЯЯ ПОНЕЛЬ */ 
+    
+.footar{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: auto;
+    height: 200px;
+    background: rgb(54, 54, 54);
+}
+.address_number{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    padding: 50px;
+    color: white;
+}
+.text{
+    display: flex;
+    height: 20%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.486);
+}
