@@ -10,7 +10,8 @@ body{
 .menu{
     display: flex;
     flex-direction: row;
-    width: auto;
+    flex-grow: 1;
+    width: 100%;
     height: 60px;
     background: #0f7417;
     padding: 10px;
