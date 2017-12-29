@@ -1,50 +1,35 @@
 body{
     font-family: "Gabriela"; 
-    font-size: 28px;
+    font-size: 18px;
     color: black;
     margin: 0;
 }
 
 /* МЕНЮ */
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 60px;
-    background: #0f7417;
-    padding: 10px;
-    color: wheat;
-    text-decoration: none;
+nav{
+    width: 100%;
+    background-color:#0f7417;
     justify-content: flex-end;
+    text-align: end;
 }
-.menu_logotip{
-    background-image: url("../images/viking.jpg");
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    align-self: flex-start;
+nav ul li {
+    display:inline-block;  
 }
-.menu_items{
-    display: flex;
-    width: auto;
-    height: auto;
-    padding: 25px;
-    margin-left: 10px;
-    font-size: 18px ;
-    text-align: center;
-    color: #fff; /* цвет текста */
-    background: #0f7417;
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
-    padding: .7em 1.5em; /* отступ от текста */
-    outline: none; /* убирать контур в Mozilla */
-    border: 0;
-    cursor: pointer;
+nav ul li:hover { background: #05d413;} /* при наведении курсора мышки */
+nav ul li:active { background: rgba(17, 61, 21, 0.479); } /* при нажатии */
+
+nav a{
+    color:#F8ECC2;
+    display:block;
+    text-decoration: none;
+    padding:20px 30px;
+
 }
-.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
-.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
-    
+.menu-trigger{
+    display:none;
+    color:#F8ECC2;
+}
 a{ 
     flex-grow: 1;
     text-decoration: none;
@@ -114,7 +99,9 @@ a{
     text-align:  center;  
     background: rgb(255, 255, 255);
     margin: 50px;
-
+    align-self: center;
+    max-width: 800px;
+    font-size: 22px;
 }  
 
 /* НАШИ РАБОТЫ */
@@ -135,6 +122,7 @@ a{
     margin-bottom: 100px; 
     align-self: center;
     align-items: center;
+    max-width: 800px;
 }      
 .tattoo_from_VIKING_img{
     display: flex;
@@ -151,7 +139,7 @@ a{
 .tattoo_from_VIKING_text{
     padding: 25px;           
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     align-self: center;
     justify-content: center;
 }
@@ -334,7 +322,7 @@ a{
     background-size: 100%;
     background-size: cover;
     height: 600px;
-    width: auto;
+    width: 100%;
     align-items: center;
 } 
 .VK_filtr_podpiska{
@@ -400,19 +388,26 @@ a{
     color: white;
 }
 
+    /* ДИСПЛЕЙ МЕНЕЕ 1000px */
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 body{
     font-family: "Gabriela";
     font-size: 15;
 }
-.container{
-    padding: 0;
+    /* MENU */
+.menu-trigger {
+    display:block;
 }
-    /* VK */
-.VK_p{
-    font-size: 60px;
+nav ul li {
+    display:block;
+    border-top:1px #79896D solid;    
+}
+nav ul {
+    display:none;
+}
+.text_logotip{
+    display: none;
 }
     /* НАШИ РАБОТЫ */
 .tattoo_from_VIKING{
@@ -421,34 +416,43 @@ body{
 }
 .tattoo_from_VIKING_text{
     margin-top: 50px;          
-    font-size: 50px;
+    font-size: 18px;
+}
+    /* VK */
+.VK_filtr{
+    height: 300px;
+}
+.VK_p{
+    font-size: 25px;
 }
     /* НАШИ МАСТЕРА */
 .masters{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 .a_masters_1{
     display: flex;
     flex-grow: 1;
+    height: 250px;
+    width: 250px;
 }
 .master_1{
     display: flex;
     flex-grow: 1;
 }
 .macters_foto1{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
 }
 .macters_foto2{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
 }
 .masters_text{
-    font-size: 50px;
+    font-size: 25px;
 }
 .masters_text2{
-    font-size: 40px;
+    font-size: 18px;
 }
     /* КОНТАКТНАЯ ИНФОРМАЦИЯ */
 .contakts2{
@@ -458,17 +462,25 @@ body{
 .contakt3{
     display: flex;
     padding: 20px;
-    font-size: 45px;
+    font-size: 18px;
 }
 .show{
     display: flex;
     align-self: center;
-    padding: 25px;
-    font-size: 45px
+    padding: 5px;
+}
+.map{
+    height: auto;
+    width: 100%;
 }
     /* СООБЩЕНИЕ НАМ */
+.podpiska{
+    height: auto;
+}
 .text_podpiska{
     margin-bottom: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 .network{
     flex-grow: 1;
@@ -477,7 +489,7 @@ body{
 .network_inem{
     display: flex;
     text-align: center;
-    font-size: 60px;
+    font-size: 20px;
 
 }
     /* НИЖНЯЯ ПОНЕЛЬ */ 
@@ -488,7 +500,7 @@ body{
     padding-bottom: 50px;
 }
 .address_number{
-    font-size: 45px;
+    font-size: 25px;
     margin: 20px;   
 }
 .zapiss{
