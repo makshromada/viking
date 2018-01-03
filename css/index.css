@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    flex-direction: column;
     font-family: "Gabriela"; 
     font-size: 18px;
     color: black;
@@ -12,22 +14,22 @@ nav{
     background-color:#0f7417;
     justify-content: flex-end;
     text-align: end;
+    position: fixed;
 }
 nav ul li {
-    display:inline-block;  
+    display: inline-block;  
 }
 nav ul li:hover { background: #05d413;} /* при наведении курсора мышки */
 nav ul li:active { background: rgba(17, 61, 21, 0.479); } /* при нажатии */
 
 nav a{
-    color:#F8ECC2;
+    color: white;
     display:block;
     text-decoration: none;
-    padding:20px 30px;
-
+    padding:10px 30px;
 }
 .menu-trigger{
-    display:none;
+    display: none;
     color:#F8ECC2;
 }
 a{ 
@@ -40,9 +42,7 @@ a{
 
 .zapiss{
     display: flex;
-    width: auto;
     height: auto;
-    padding: 25px;
     margin-left: 10px;
     font-size: 18px;
     width: auto;
@@ -56,29 +56,23 @@ a{
     border: 0;
     cursor: pointer;
     position: fixed;
-
+    margin-top: 30%;
+    align-self: flex-end;
 }
-/* ЛОГОТИП */
+
+    /* ЛОГОТИП */
 
 .logotip{
     display: flex;
-    background-image: url("../images/logotip.jpg");
-    height: 300px;
-    background-size: cover;
-    justify-content: flex-end;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
 }
-.text_logotip{
+.logotip_text{
     text-align: center;
     font-size: 35px;
-    margin-top: 40px;
-    margin-right: 40px;
-}
-.hr_logotip{
-    display: flex;
-    width: auto;
-    width: 420px;
-    height: 3px;
-    background: #000000;
+    font-weight: 600;
 }
 
 /* ГЛАВНЫЙ КОНТЕЙНЕР */
@@ -101,13 +95,13 @@ a{
     margin: 50px;
     align-self: center;
     max-width: 800px;
-    font-size: 22px;
+    font-size: 25px;
 }  
 
 /* НАШИ РАБОТЫ */
 .hr{
     border: solid 3px green;
-    width: 100%;
+    width: 90%;
     border-radius: 2px;
 }
 .tattoo_from_VIKING{
@@ -135,6 +129,8 @@ a{
     border-radius: 50%;
     border: 10px solid green;
     background-size: cover;
+    color: green;
+    font-size: 55px;
 }
 .tattoo_from_VIKING_text{
     padding: 25px;           
@@ -188,6 +184,8 @@ a{
     color: white; 
     text-decoration: none;  
     padding: 25px;  
+    border-radius: 5px;
+    
 }
 
 /* НАШИ МАСТЕРА */
@@ -313,7 +311,6 @@ a{
 }
 
 /* СООБЩЕНИЕ НАМ */
-
 .podpiska{
     display: flex;
     flex-direction: column;
@@ -388,16 +385,18 @@ a{
     color: white;
 }
 
-    /* ДИСПЛЕЙ МЕНЕЕ 1000px */
+    /* ДИСПЛЕЙ МЕНЕЕ 800px */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
 body{
-    font-family: "Gabriela";
     font-size: 15;
 }
 .container{
     margin: 0;
     padding: 0;
+}
+.logotip{
+    display: none
 }
     /* MENU */
 .menu-trigger {
@@ -410,13 +409,28 @@ nav ul li {
 nav ul {
     display:none;
 }
-.text_logotip{
-    display: none;
+.logotip_text{
+    margin-top: 70px;
+}
+    /* ЗАПИСЬ */
+.zapiss{
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    bottom: 1px;
+    font-size: 20px;
 }
     /* НАШИ РАБОТЫ */
 .tattoo_from_VIKING{
     display: flex;
     flex-direction: column;
+
+}
+.tattoo_from_VIKING_img{
+    width: 250px;
+    height: 250px;
 }
 .tattoo_from_VIKING_text{
     margin-top: 50px;          
@@ -424,10 +438,10 @@ nav ul {
 }
     /* VK */
 .VK_filtr{
-    height: 300px;
+    height: 250px;
 }
 .VK_p{
-    font-size: 25px;
+    font-size: 20px;
 }
     /* НАШИ МАСТЕРА */
 .masters{
@@ -445,12 +459,12 @@ nav ul {
     flex-grow: 1;
 }
 .macters_foto1{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 .macters_foto2{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 .masters_text{
     font-size: 25px;
@@ -466,7 +480,7 @@ nav ul {
 .contakt3{
     display: flex;
     padding: 20px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .show{
     display: flex;
@@ -505,6 +519,121 @@ nav ul {
 }
 .address_number{
     font-size: 25px;
+    margin: 20px;   
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 300px){
+
+
+    /* логотип */
+.logotip{
+    display: none;
+}
+    /* НАШИ РАБОТЫ */
+.tattoo_from_VIKING{
+    display: flex;
+    flex-direction: column;
+}
+.tattoo_from_VIKING_img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    font-size: 25px;
+}
+.tattoo_from_VIKING_text{
+    margin-top: 50px;          
+    font-size: 12px;
+}
+    /* VK */
+.VK_filtr{
+    height: 250px;
+}
+.VK_p{
+    font-size: 13px;
+}
+    /* НАШИ МАСТЕРА */
+.masters{
+    display: flex;
+    flex-direction: column;
+}
+.a_masters_1{
+    display: flex;
+    flex-grow: 1;
+    height: 150px;
+    width: 150px;
+}
+.master_1{
+    display: flex;
+    flex-grow: 1;
+}
+.macters_foto1{
+    height: 150px;
+    width: 150px;
+}
+.macters_foto2{
+    height: 150px;
+    width: 150px;
+}
+.masters_text{
+    font-size: 16px;
+}
+.masters_text2{
+    font-size: 14px;
+}
+    /* КОНТАКТНАЯ ИНФОРМАЦИЯ */
+.contakts2{
+    display: flex;
+    flex-direction: column;
+}
+.contakt3{
+    display: flex;
+    padding: 20px;
+    font-size: 14px;
+}
+.show{
+    display: flex;
+    align-self: center;
+    padding: 5px;
+}
+.map{
+    height: auto;
+    width: 100%;
+}
+    /* СООБЩЕНИЕ НАМ */
+.podpiska{
+    height: auto;
+}
+.text_podpiska{
+    margin-bottom: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.network{
+    flex-grow: 1;
+    display: flex;
+}
+.network_inem{
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+}
+    /* НИЖНЯЯ ПОНЕЛЬ */ 
+.footar{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 50px;
+}
+.address_number{
+    font-size: 20px;
     margin: 20px;   
 }
 .zapiss{

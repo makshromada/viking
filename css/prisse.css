@@ -2,62 +2,53 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Gabriela"; 
-    font-size: 28px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
     margin: 0;
 }
 
 /* МЕНЮ */
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 60px;
-    background: #0f7417;
-    padding: 10px;
-    color: wheat;
-    text-decoration: none;
+nav{
+    width: 100%;
+    background-color:#0f7417;
     justify-content: flex-end;
+    text-align: end;
+    position: fixed;
 }
-.menu_logotip{
-    background-image: url("../images/viking.jpg");
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    align-self: flex-start;
+nav ul li {
+    display: inline-block;  
 }
-.menu_items{
-    display: flex;
-    width: auto;
-    height: auto;
-    padding: 25px;
-    margin-left: 10px;
-    font-size: 18px ;
-    text-align: center;
-    color: #fff; /* цвет текста */
-    background: #0f7417;
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
-    padding: .7em 1.5em; /* отступ от текста */
-    outline: none; /* убирать контур в Mozilla */
-    border: 0;
-    cursor: pointer;
+nav ul li:hover { background: #05d413;} /* при наведении курсора мышки */
+nav ul li:active { background: rgba(17, 61, 21, 0.479); } /* при нажатии */
+
+nav a{
+    color: white;
+    display:block;
+    text-decoration: none;
+    padding:10px 30px;
 }
-.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
-.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+.menu-trigger{
+    display: none;
+    color:#F8ECC2;
+}
+a{ 
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
     
+    /*ЗАПИСЬ*/
+
 .zapiss{
     display: flex;
-    width: auto;
     height: auto;
-    padding: 25px;
-    margin-top: 100px;
     margin-left: 10px;
-    font-size: 18px ;
+    font-size: 18px;
+    width: auto;
     text-align: center;
     color: #fff; /* цвет текста */
-    background: #bb680893;
+    background: #0ebb0893;
     text-decoration: none; /* убирать подчёркивание у ссылок */
     user-select: none; /* убирать выделение текста */
     padding: .7em 1.5em; /* отступ от текста */
@@ -65,14 +56,12 @@ body{
     border: 0;
     cursor: pointer;
     position: fixed;
+    margin-top: 30%;
     align-self: flex-end;
 }
-a{
-    display: flex;
-    flex-grow: 1;
-    text-decoration: none;
-    color: white;
-}
+
+/* ГЛАВНЫЙ КОНТЕЙНЕР */
+
 .container{
     display: flex;
     flex-direction: column;
@@ -80,8 +69,9 @@ a{
     width: auto; 
     margin-right: 10%;
     margin-left: 10%;
+    margin-top: 100px;
     text-align: center;
-
+    font-size: 25px;
 }
 hr{
     width: 100%;
@@ -100,7 +90,7 @@ hr{
     display: flex;
     flex-direction: column;
     height: 350px;
-    width: 200px;
+    width: 100%;
     background-image: url("../images/prisse/black-write.jpg");
     background-size: cover;
     flex-grow: 1;
@@ -112,7 +102,7 @@ hr{
     display: flex;
     flex-direction: column;
     height: 350px;
-    width: 200px;
+    width: 100%;
     background-image: url("../images/prisse/chikano.jpg");
     background-size: cover;
     flex-grow: 1;
@@ -124,7 +114,7 @@ hr{
     display: flex;
     flex-direction: column;
     height: 350px;
-    width: 200px;
+    width: 100%;
     background-image: url("../images/prisse/dotvork.jpg");
     background-size: cover;
     flex-grow: 1;
@@ -180,4 +170,45 @@ hr{
     justify-content: center;
     align-items: center;
     background: rgba(95, 95, 95, 0.486);
+    font-size: 20px;
+}
+
+    /* ДИСПЛЕЙ МЕНЕЕ 800px */
+
+@media screen and (max-width: 800px){
+body{
+    font-family: "Gabriela";
+    font-size: 15;
+}
+    /* MENU */
+.menu-trigger {
+    display:block;
+}
+nav ul li {
+    display:block;
+    border-top:1px #79896D solid;    
+}
+nav ul {
+    display:none;
+}
+.style{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footar{
+    flex-direction: column;
+}
+    /* ЗАПИСЬ */
+.zapiss{
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    bottom: 1px;
+    font-size: 20px;
+}
+
+
 }

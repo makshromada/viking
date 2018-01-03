@@ -1,76 +1,53 @@
 body{
+    display: flex;
+    flex-direction: column;
     font-family: "Gabriela"; 
-    font-size: 28px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
     margin: 0;
 }
 
 /* МЕНЮ */
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
+nav{
     width: 100%;
-    height: 60px;
-    background: #0f7417;
-    padding: 10px;
-    color: wheat;
-    text-decoration: none;
+    background-color:#0f7417;
     justify-content: flex-end;
+    text-align: end;
+    position: fixed;
 }
-.menu_logotip{
-    background-image: url("../images/viking.jpg");
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    align-self: flex-start;
+nav ul li {
+    display: inline-block;  
 }
-.menu_items{
-    display: flex;
-    width: auto;
-    height: auto;
-    padding: 25px;
-    margin-left: 10px;
-    font-size: 18px ;
-    text-align: center;
-    color: #fff; /* цвет текста */
-    background: #0f7417;
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
-    padding: .7em 1.5em; /* отступ от текста */
-    outline: none; /* убирать контур в Mozilla */
-    border: 0;
-    cursor: pointer;
-}
-.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
-.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
+nav ul li:hover { background: #05d413;} /* при наведении курсора мышки */
+nav ul li:active { background: rgba(17, 61, 21, 0.479); } /* при нажатии */
 
-a{
-    display: flex;
+nav a{
+    color: white;
+    display:block;
+    text-decoration: none;
+    padding:10px 30px;
+}
+.menu-trigger{
+    display: none;
+    color:#F8ECC2;
+}
+a{ 
     flex-grow: 1;
     text-decoration: none;
     color: white;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
+    
 /* НАВИГАЦИЯ */
 
 .novigatian{
     display: flex;
     flex-direction: row;
     height: auto;
-    width: auto;
     padding: 20px;
-    background: rgb(161, 161, 161);
+    margin: 100px;
     border-radius: 15px;
-    margin-top: 50px;
-
+    justify-content: center;
 }
 .novigatian_items{
     display: flex;
@@ -86,8 +63,8 @@ a{
     justify-content: center;
     align-self: center;
     background-image: url(../images/070HiAP7HmY.jpg);
-    height: 230px;
-    width: 230px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     border: 10px solid green;
     background-size: cover;
@@ -101,8 +78,8 @@ a{
     justify-content: center;
     align-self: center;
     background-image: url(../images/070HiAP7HmY.jpg);
-    height: 230px;
-    width: 230px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     border: 10px solid rgb(99, 99, 99);
     background-size: cover;
@@ -120,24 +97,23 @@ a{
 .hr{
     border: solid 3px green;
     width: 90%;
-    margin-top: 50px;
     border-radius: 5px;
 }   
 
 /* ГАЛЕРЕЯ */
 
-.library { 
+.library{ 
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
 }
-.library a {
+.library a{
     flex-grow: 1;
     margin: 5px;
     overflow: hidden;
 }
-.library img {
+.library img{
     display: inline-block;
     width: 300px;
     height: 400px;
@@ -147,4 +123,47 @@ a{
 a{  
     display: flex;
     flex-grow: 1;
-    }
+}
+
+   /* ДИСПЛЕЙ МЕНЕЕ 800px */
+
+@media screen and (max-width: 800px){
+body{
+    font-size: 15;
+}
+    /* MENU */
+.menu-trigger {
+    display:block;
+}
+nav ul li {
+    display:block;
+    border-top:1px #79896D solid;    
+}
+nav ul {
+    display:none;
+}
+.logotip_text{
+    margin-top: 70px;
+}
+
+    /* НОВИГАЦИЯ */
+.novigatian{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+   /* ДИСПЛЕЙ МЕНЕЕ 400px */
+
+@media screen and (max-width: 800px){
+
+.tattoo_from_VIKING_img1{
+    width: 200px;
+    height: 200px;
+}
+.tattoo_from_VIKING_img{
+    width: 200px;
+    height: 200px;
+}
+}

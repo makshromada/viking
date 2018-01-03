@@ -1,6 +1,6 @@
 body{
     font-family: "Gabriela"; 
-    font-size: 28px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
     margin: 0;
     text-align: end;
@@ -8,56 +8,73 @@ body{
 
 /* МЕНЮ */
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 60px;
-    background: #0f7417;
-    padding: 10px;
-    color: wheat;
-    text-decoration: none;
+nav{
+    width: 100%;
+    background-color:#0f7417;
     justify-content: flex-end;
+    text-align: end;
+    position: fixed;
 }
-.menu_logotip{
-    background-image: url("../images/viking.jpg");
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    align-self: flex-start;
+nav ul li {
+    display: inline-block;  
 }
+nav ul li:hover { background: #05d413;} /* при наведении курсора мышки */
+nav ul li:active { background: rgba(17, 61, 21, 0.479); } /* при нажатии */
 
-.menu_items{
+nav a{
+    color: white;
+    display:block;
+    text-decoration: none;
+    padding:10px 30px;
+}
+.menu-trigger{
+    display: none;
+    color:#F8ECC2;
+}
+a{ 
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
+    
+    /*ЗАПИСЬ*/
+
+.zapiss{
     display: flex;
-    width: auto;
     height: auto;
-    padding: 25px;
     margin-left: 10px;
-    font-size: 18px ;
+    font-size: 18px;
+    width: auto;
     text-align: center;
     color: #fff; /* цвет текста */
-    background: #0f7417;
+    background: #0ebb0893;
     text-decoration: none; /* убирать подчёркивание у ссылок */
     user-select: none; /* убирать выделение текста */
     padding: .7em 1.5em; /* отступ от текста */
     outline: none; /* убирать контур в Mozilla */
     border: 0;
     cursor: pointer;
+    position: fixed;
+    margin-top: 30%;
+    align-self: flex-end;
 }
-.menu_items:hover { background: #05d413;} /* при наведении курсора мышки */
-.menu_items:active { background: rgb(0, 0, 0); } /* при нажатии */
-    
-a{
+    /* ТЕКСТ */
+.text{
     display: flex;
-    flex-grow: 1;
-    text-decoration: none;
+    height: 20%;
     color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.486);
+    font-size: 25px;
 }
+    /* СТИЛИ */
 .container{
     display: flex;
     flex-direction: row;
     height: auto;
     width: 100%;
+    padding-top: 100px;
 }
 .prisse{
     display: flex;
@@ -348,14 +365,7 @@ a{
     margin: 5px;
     border: solid 4px green;
 }
-.text{
-    display: flex;
-    height: 20%;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background: rgba(95, 95, 95, 0.486);
-}
+
 
 /* НИЖНЯЯ ПОНЕЛЬ */ 
     
@@ -385,4 +395,44 @@ a{
     justify-content: center;
     align-items: center;
     background: rgba(95, 95, 95, 0.486);
+}
+
+    /* ДИСПЛЕЙ МЕНЕЕ 800px */
+
+@media screen and (max-width: 800px){
+body{
+    font-family: "Gabriela";
+    font-size: 15;
+}
+    /* MENU */
+.menu-trigger {
+    display:block;
+}
+nav ul li {
+    display:block;
+    border-top:1px #79896D solid;    
+}
+nav ul {
+    display:none;
+}
+.style{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footar{
+    flex-direction: column;
+}
+    /* ЗАПИСЬ */
+.zapiss{
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    bottom: 1px;
+    font-size: 20px;
+}
+
+
 }
