@@ -182,7 +182,8 @@ body{
 }
     /* MENU */
 .menu-trigger {
-    display:block;
+    display: block;
+    margin: 10px;
 }
 nav ul li {
     display:block;
