@@ -1,0 +1,439 @@
+body{
+    font-family: "Gabriela"; 
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: end;
+}
+
+/* МЕНЮ */
+
+nav{
+    width: 100%;
+    background-color:#0f7417;
+    justify-content: flex-end;
+    text-align: end;
+    position: fixed;
+}
+nav ul li {
+    display: inline-block;  
+}
+nav ul li:hover { background: #05d413;} /* при наведении курсора мышки */
+nav ul li:active { background: rgba(17, 61, 21, 0.479); } /* при нажатии */
+
+nav a{
+    color: white;
+    display:block;
+    text-decoration: none;
+    padding:10px 30px;
+}
+.menu-trigger{
+    display: none;
+    color:#F8ECC2;
+}
+a{ 
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+}
+    
+    /*ЗАПИСЬ*/
+
+.zapiss{
+    display: flex;
+    height: auto;
+    margin-left: 10px;
+    font-size: 18px;
+    width: auto;
+    text-align: center;
+    color: #fff; /* цвет текста */
+    background: #0ebb0893;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 0;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 30%;
+    align-self: flex-end;
+}
+    /* ТЕКСТ */
+.text{
+    display: flex;
+    height: 20%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.486);
+    font-size: 25px;
+}
+    /* СТИЛИ */
+.container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+}
+.prisse{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    margin: 2px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.akvarel{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/akvarel.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.biomehanka{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/biomehanka.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;    
+}
+.bioorganika{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/bioorganika.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.black-vork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/black-vork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.black-write{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/black-write.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.chikano{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/chikano.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.dotvork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/dotvork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.etnika{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/etnika.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.grafika{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/grafika.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.gravure{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/chikano.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.hedpouk{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/hedpouk.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.jpane{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/jpane.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.lainevork{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/lainevork.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.minimalizm{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/minimalizm.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+
+.neo-tradishn{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/neo-tradishn.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.nev-skul{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/nev-skul.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.old_skul{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/old_skul.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.oriental{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/oriental.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.ornamental{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/ornamental.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.polinesiya{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/polinesiya.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.real{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/real.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.skech-style{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/skech-style.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.tradishnl{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/tradishnl.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.tresh-polka{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/tresh-polka.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+.trible{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background-image: url("../images/prisse/trible.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 5px;
+    border: solid 4px green;
+}
+
+
+/* НИЖНЯЯ ПОНЕЛЬ */ 
+    
+.footar{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: auto;
+    height: 200px;
+    background: rgb(54, 54, 54);
+}
+.address_number{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    padding: 50px;
+    color: white;
+}
+.text{
+    display: flex;
+    height: 20%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.486);
+}
+
+    /* ДИСПЛЕЙ МЕНЕЕ 800px */
+
+@media screen and (max-width: 800px){
+body{
+    font-family: "Gabriela";
+    font-size: 15;
+}
+    /* MENU */
+.menu-trigger {
+    display:block;
+    margin: 10px;
+}
+nav ul li {
+    display:block;
+    border-top:1px #79896D solid;    
+}
+nav ul {
+    display:none;
+}
+.style{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footar{
+    flex-direction: column;
+}
+    /* ЗАПИСЬ */
+.zapiss{
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    bottom: 1px;
+    font-size: 20px;
+}
+
+
+}
