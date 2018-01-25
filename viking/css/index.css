@@ -314,7 +314,7 @@ a{
     align-items: center;
     width: auto;
     height: auto;
-    font-size: 35px;
+    font-size: 25px;
     padding: 50px;
     color: white;
 }
@@ -426,7 +426,7 @@ nav ul {
     padding-bottom: 50px;
 }
 .address_number{
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px;   
 }
 
